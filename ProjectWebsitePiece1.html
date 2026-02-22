@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Project Website</title>
+  <link rel="stylesheet" href="ProjectWebsite.css">
+  </head>
+  <body>
+    <main>
+      <h1>Project Website</h1>
+      <div id = "buttons" class = "directory">
+        <button onclick = "showSection('home')">Home</button>
+        <button onclick = "showSection('AboutMe')">About Me</button>
+        <button onclick = "showSection('ProjectOutline')">Project Outline</button>
+        <div class="dropdown">
+          <button onclick="toggleDropdown()">Projects</button>
+          <div id="dropdownMenu" class="dropdown-content">
+            <button onclick="showSection('jsProjects')">JS Projects</button>
+            <button onclick="showSection('pythonProjects')">Python Projects</button>
+          </div>
+        </div>
+        
+      </div>
+        <div id = "home" class = "section">
+        <h2>About This Project</h2>
+        <p>This project is my attempt at making my own website from scratch. My hope is that using this project I will be able to physically demonstrate my abilities, and proficiencies in computer science. So far, this project has been done completely on the side. No college courses have helped me speed this process along which is why there isn't much to show just yet. There will be a form you can fill out at the end. It's entirely optional but greatly appreciated. 
+        </p>
+        <p>
+          This website will also be the central hub for all my other future projects. As of right now I'm not sure what those projects will be but I plan to document them here.
+        </p>
+      </div>
+      <div id = "AboutMe" class = "section">
+        <h2>About Me</h2>
+        <p>
+          My name is Jarrett, I am from St. Cloud, MN. I am currently studying Computer Science at the University of Oregon.
+        </p>
+        <p>
+          I like sports, woodworking, metalworking, and playing video games with friends.
+        </p>
+        <a href = "https://pixabay.com/images/search/woodworking/"><img src = "https://cdn.pixabay.com/photo/2018/12/06/16/14/craft-3860037_1280.jpg" width = "400" alt = "Woodworking"></a>
+        <h3>
+          My favorite sports:
+        </h3>
+        <ol>
+          <li>Bodybuilding</li>
+          <li>Track and Field</li>
+          <li>Football</li>
+        </ol>
+        <p>
+          My <em>favorite</em> thing to do is work out. I love bodybuilding, to me it's more than just a hobby. I will probably use this love for the sport in at least one future project.
+        </p>
+        <a href = "https://ar.pinterest.com/pin/975240494289419656/"><img src = "https://i.pinimg.com/736x/19/b9/81/19b9813152cd2dd144d8dd6977e33096.jpg" width = "600" alt = "Bodybuilding diagram"></a>
+      </div>
+      <div id = "ProjectOutline" class = "section">
+        <h2>Rough Project(s) Plan</h2>
+        <p>
+          Looking to the future I think it would be beneficial to me if I at least roughly planned out what I want to learn and demonstrate here in this project.
+        </p>
+        <ul>
+          <li>HTML code for website</li>
+          <li>For this HTML code I want to show all the things I know but I'm not sure how to make it cohesive so it'll take some thought. I guess I could just slap it on and call it good.</li>
+          <li>CSS code for website</li>
+          <li>Maybe some JavaScript for the site, I'm not sure what that might entail but I know JavaScript is useful to know</li>
+          <li>The next project after this</li>
+        </ul>
+      </div>
+      <div id="jsProjects" class="section">
+        <h2>JavaScript Projects</h2>
+        <p>This is my final project for the University of Oregon's CS 111 class. The final project needed to use all of the material and techniques we learned throughout the term to create a JavaScript app. </p>
+        <iframe src="breathing-app.html" width="600" height="800" style="border:1px solid #ccc;">
+          iframes unsupported
+        </iframe>
+      </div>
+      <div id="pythonProjects" class="section">
+        <h2>Python Projects</h2>
+        <p>List of Python projects...</p>
+      </div>
+      <section>
+        <h2>Project Form</h2>
+        <p>
+          I want to make a form for this website mostly to demonstrate my abilities but also to receive feedback regarding this project. If you wish to remain anonymous that's perfectly fine, but I do ask you be honest with your position to me and the feedback regarding the project. 
+        </p>
+        <form action = "http://127.0.0.1:3000/Users/thelen.jarrett/Desktop/Project Website/ProjectWebsitePiece1.html">
+          <fieldset>
+            <legend>What's your name?</legend>
+            <label><input id = "name" type = "text" name = "yourname" placeholder = "not required"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Who are you?</legend>
+            <label><input id = "business" type = "radio" name = "position" value = "business" checked>Business</label>
+            <label><input id = "friend" type = "radio" name = "position" value = "friend">Friend</label>
+            <label><input id = "family" type = "radio" name = "position" value = "family">Family</label>
+            <label><input id = "other" type = "radio" name = "position" value = "other" >Other</label>
+          </fieldset>
+          <fieldset>
+            <legend>What was good about this website?</legend>
+            <label><input id = "aesthetics" type = "checkbox" name = "positives" value = "aesthetics" >Aesthetics</label>
+            <label><input id = "demonstrations" type = "checkbox" name = "positives" value = "demonstrations" >Ideas/Material Demonstrated</label>
+            <label><input id = "information" type = "checkbox" name = "positives" value = "information" >Information</label>
+          </fieldset>
+          <fieldset>
+            <legend>What could be improved about this website?</legend>
+            <label><input id = "neg_aesthetics" type = "checkbox" name = "negatives" value = "neg_aesthetics" >Aesthetics</label>
+            <label><input id = "neg_demonstrations" type = "checkbox" name = "negatives" value = "neg_demonstrations" >Ideas/Material Demonstrated</label>
+            <label><input id = "neg_information" type = "checkbox" name = "negatives" value = "neg_information" >Information</label>
+          </fieldset>
+          <input type = "text" name = "Project Website" placeholder = "Email" required>
+          <button type = "submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>The majority of this project was made with ideas I learned from <a href = "https://www.freecodecamp.org/learn">FreeCodeCamp</a></p>
+    </footer>
+    <script src="ProjectWebsite.js"></script>
+  </body>
+</html>

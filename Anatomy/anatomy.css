@@ -1,0 +1,438 @@
+h1 {
+    width: 100vw;
+    text-align: center;
+    font-size: 40px;
+}   
+
+h2 {
+    font-size: 20px;
+    margin-left: 40px;
+} 
+
+h3 {
+    margin-left: 40px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.section {
+    display: none;
+}
+p {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+  }
+
+.directory {
+    position: relative;
+    margin-left: 40px;
+}
+  
+.dropdown-content {
+display: none;
+position: absolute;
+background: white;
+border: 1px solid #ccc;
+min-width: 220px;
+z-index: 1000;
+}
+  
+.dropdown-content.show {
+display: block;
+}
+  
+  .submenu {
+    display: none;
+    padding-left: 12px;
+    border-left: 2px solid #eee;
+  }
+  
+  .submenu.show {
+    display: block;
+  }
+  
+  button {
+    width: 100%;
+    padding: 2px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #f2f2f2;
+  }
+
+.atlas {
+    margin-bottom: 300px;
+}
+
+  .muscle {
+    fill: rgba(255, 0, 0, 0);
+    cursor: pointer;
+    transition: fill 0.2s ease;
+    pointer-events: all;
+  }
+
+body.mode-superficial .muscle.Superficial.Head:hover {
+    fill: rgba(25, 25, 112, 0.746);
+  }
+body.mode-superficial .muscle.Superficial.Neck:hover {
+    fill: rgba(0, 139, 139, 0.746);
+  }
+body.mode-superficial .muscle.Superficial.Chest:hover {
+    fill: rgba(41, 155, 73, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Back:hover {
+    fill: rgba(41, 109, 155, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Abdomen:hover {
+    fill: rgba(255, 217, 0, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Shoulder:hover {
+    fill: rgba(239, 11, 159, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Upper_Arm:hover {
+    fill: rgba(239, 11, 159, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Forearm_Flexors:hover {
+    fill: rgba(139, 0, 139, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Forearm_Extensors:hover {
+    fill: rgba(139, 0, 139, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Hand:hover {
+    fill: rgba(139, 0, 139, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Glutes:hover {
+    fill: rgba(0, 250, 154, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Quads:hover {
+    fill: rgba(11, 227, 247, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Hamstrings:hover {
+    fill: rgba(11, 227, 247, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Calves:hover {
+    fill: rgba(30, 143, 255, 0.746);
+  }
+  body.mode-superficial .muscle.Superficial.Feet:hover {
+    fill: rgba(30, 143, 255, 0.746);
+  }
+
+
+
+  body.mode-intrinsic .muscle.Intrinsic.Head:hover {
+    fill: rgba(25, 25, 112, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Neck:hover {
+    fill: rgba(0, 139, 139, 0.746);
+  }
+body.mode-intrinsic .muscle.Intrinsic.Chest:hover {
+    fill: rgba(41, 155, 73, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Back:hover {
+    fill: rgba(41, 109, 155, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Abdomen:hover {
+    fill: rgba(255, 217, 0, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Shoulder:hover {
+    fill: rgba(239, 11, 159, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Upper_Arm:hover {
+    fill: rgba(239, 11, 159, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Forearm_Flexors:hover {
+    fill: rgba(139, 0, 139, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Forearm_Extensors:hover {
+    fill: rgba(139, 0, 139, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Hand:hover {
+    fill: rgba(139, 0, 139, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Glutes:hover {
+    fill: rgba(0, 250, 154, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Quads:hover {
+    fill: rgba(11, 227, 247, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Hamstrings:hover {
+    fill: rgba(11, 227, 247, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Calves:hover {
+    fill: rgba(30, 143, 255, 0.746);
+  }
+  body.mode-intrinsic .muscle.Intrinsic.Feet:hover {
+    fill: rgba(30, 143, 255, 0.746);
+  }
+
+
+
+  body.mode-superficial .muscle.Intrinsic,
+  body.mode-superficial .muscle.Intrinsic * {
+    pointer-events: none;
+  }
+  
+  body.mode-intrinsic .muscle.Superficial,
+  body.mode-intrinsic .muscle.Superficial * {
+    pointer-events: none;
+  }
+  
+  body.mode-superficial .muscle.Intrinsic,
+  body.mode-intrinsic .muscle.Superficial {
+    cursor: default;
+  }
+
+/* toggle button */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 40px;
+    height: 24px;
+    font-size: 10px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(14px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* Legend */
+/* .legend-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    font-family: sans-serif;
+  } */
+  
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+  } 
+  
+.dot.head{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: rgba(25, 25, 112, 0.746);
+  }
+  .dot.neck{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: rgba(0, 139, 139, 0.746);
+  }
+  .dot.upper-arm{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: rgba(239, 11, 159, 0.746);
+  }
+  .dot.lower-arm{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: rgba(139, 0, 139, 0.746);
+  }
+  .dot.chest{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color:rgba(41, 155, 73, 0.746);
+  }
+  .dot.abdomen{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: rgba(255, 217, 0, 0.746);
+  }
+  .dot.back{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: rgba(41, 109, 155, 0.746);
+  }
+  .dot.glutes{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: rgba(0, 250, 154, 0.746);
+  }
+  .dot.upper-leg{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: rgba(11, 227, 247, 0.746);
+  }
+  .dot.lower-leg{
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: rgba(30, 143, 255, 0.746);
+  }
+
+.label-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+.label-group {
+    display: flex;
+    align-items: center; 
+    gap: 0px;
+    font-size: 15px;
+  }
+
+.atlas-svg {
+    height: 100vh;
+}
+
+.toggle-text {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.tooltip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-9999px, -9999px);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2000;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 12px;
+    max-width: 260px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    transition: opacity 120ms ease;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.tooltip-title {
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.tooltip-blurb {
+    font-size: 13px;
+    line-height: 1.25;
+}
